@@ -46,13 +46,13 @@
             </div>
 
             <!-- Product Details Card -->
-            <div id="productDetailCard" style="display: none; background-color: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--gray-100); overflow: hidden; max-width: 1000px; margin: 0 auto;">
-                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; padding: 50px; align-items: start;">
+            <div id="productDetailCard" class="product-detail-card" style="display: none;">
+                <div class="product-detail-grid">
                     
                     <!-- Left: Media/Image -->
-                    <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
-                        <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, var(--gray-100) 0%, var(--accent-light) 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 40px; border: 1px solid var(--gray-100);">
-                            <img src="assets/product-placeholder.svg" id="productDetailImage" alt="Product Image" style="width: 150px; height: auto;">
+                    <div class="product-detail-media">
+                        <div class="product-detail-img-box">
+                            <img src="assets/product-placeholder.svg" id="productDetailImage" alt="Product Image" class="product-detail-img">
                         </div>
                         <span id="productDetailCategory" class="product-category-badge" style="position: static; font-size: 0.85rem; padding: 6px 14px;">Category</span>
                     </div>
@@ -66,7 +66,7 @@
                         <p id="productDetailDescription" style="font-size: 1.05rem; line-height: 1.8; color: var(--gray-700); margin-bottom: 30px;">Description text.</p>
                         
                         <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: var(--primary);">Regulatory Specifications</h3>
-                        <div style="background-color: var(--neutral-light); padding: 20px; border-radius: var(--radius-md); font-size: 0.95rem; border: 1px solid var(--gray-100); margin-bottom: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="product-specs-grid">
                             <div>
                                 <span style="color: var(--gray-500); font-weight: 600; display: block; margin-bottom: 4px;">Manufacturer:</span>
                                 <strong style="color: var(--primary);">Torso Lifesciences</strong>
@@ -86,9 +86,9 @@
                         </div>
 
                         <!-- Action buttons -->
-                        <div style="display: flex; gap: 16px;">
-                            <a id="productDetailInquiryBtn" href="index.html#contact" class="btn btn-primary" style="flex-grow: 1;">Product Inquiry <i class="fa-solid fa-paper-plane"></i></a>
-                            <a href="index.html#products" class="btn btn-outline" style="white-space: nowrap;"><i class="fa-solid fa-chevron-left"></i> Back to Catalog</a>
+                        <div class="product-detail-actions">
+                            <a id="productDetailInquiryBtn" href="index.html#contact" class="btn btn-primary btn-inquiry">Product Inquiry <i class="fa-solid fa-paper-plane"></i></a>
+                            <a href="index.html#products" class="btn btn-outline btn-back"><i class="fa-solid fa-chevron-left"></i> Back to Catalog</a>
                         </div>
                     </div>
 
