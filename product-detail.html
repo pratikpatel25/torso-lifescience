@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details — Torso Lifesciences</title>
+    <meta name="description" content="View composition, indications, and details of Torso Lifesciences' specialized nephrology formulations.">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="glass-panel">
+        <div class="container navbar">
+            <a href="index.html#home" class="logo">
+                <img src="assets/Logo.png" alt="Torso Lifesciences Logo" height="45">
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#products" class="active">Products</a>
+                <a href="index.html#gallery">Events</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Get In Touch</a>
+            </nav>
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="container">
+            
+            <!-- Breadcrumbs -->
+            <div style="margin-bottom: 30px; font-size: 0.9rem; color: var(--gray-500);">
+                <a href="index.html#home" style="color: var(--gray-500); hover: color: var(--secondary);">Home</a> &gt; 
+                <a href="index.html#products" style="color: var(--gray-500); hover: color: var(--secondary);">Products</a> &gt; 
+                <span id="breadcrumbActive" style="color: var(--primary); font-weight: 600;">Product Detail</span>
+            </div>
+
+            <!-- Product Details Card -->
+            <div id="productDetailCard" style="display: none; background-color: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--gray-100); overflow: hidden; max-width: 1000px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; padding: 50px; align-items: start;">
+                    
+                    <!-- Left: Media/Image -->
+                    <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+                        <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, var(--gray-100) 0%, var(--accent-light) 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 40px; border: 1px solid var(--gray-100);">
+                            <img src="assets/product-placeholder.svg" id="productDetailImage" alt="Product Image" style="width: 150px; height: auto;">
+                        </div>
+                        <span id="productDetailCategory" class="product-category-badge" style="position: static; font-size: 0.85rem; padding: 6px 14px;">Category</span>
+                    </div>
+
+                    <!-- Right: Info Details -->
+                    <div>
+                        <h1 id="productDetailName" style="font-size: 2.25rem; margin-bottom: 10px; color: var(--primary); line-height: 1.2;">Product Name</h1>
+                        <div id="productDetailComposition" style="font-size: 1.05rem; font-weight: 600; color: var(--secondary); background-color: var(--accent-light); padding: 12px 20px; border-radius: var(--radius-sm); margin-bottom: 30px; letter-spacing: 0.5px; border-left: 4px solid var(--secondary); line-height: 1.4;">Composition</div>
+                        
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: var(--primary);">Indication & Usage</h3>
+                        <p id="productDetailDescription" style="font-size: 1.05rem; line-height: 1.8; color: var(--gray-700); margin-bottom: 30px;">Description text.</p>
+                        
+                        <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: var(--primary);">Regulatory Specifications</h3>
+                        <div style="background-color: var(--neutral-light); padding: 20px; border-radius: var(--radius-md); font-size: 0.95rem; border: 1px solid var(--gray-100); margin-bottom: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div>
+                                <span style="color: var(--gray-500); font-weight: 600; display: block; margin-bottom: 4px;">Manufacturer:</span>
+                                <strong style="color: var(--primary);">Torso Lifesciences</strong>
+                            </div>
+                            <div>
+                                <span style="color: var(--gray-500); font-weight: 600; display: block; margin-bottom: 4px;">Regulatory Standard:</span>
+                                <strong style="color: var(--primary);">WHO-GMP / ISO 9001</strong>
+                            </div>
+                            <div>
+                                <span style="color: var(--gray-500); font-weight: 600; display: block; margin-bottom: 4px;">Prescription Class:</span>
+                                <strong style="color: var(--secondary);"><i class="fa-solid fa-file-prescription"></i> Required Rx</strong>
+                            </div>
+                            <div>
+                                <span style="color: var(--gray-500); font-weight: 600; display: block; margin-bottom: 4px;">Dosage Form:</span>
+                                <strong style="color: var(--primary);" id="productDetailForm">Oral Formulation</strong>
+                            </div>
+                        </div>
+
+                        <!-- Action buttons -->
+                        <div style="display: flex; gap: 16px;">
+                            <a id="productDetailInquiryBtn" href="index.html#contact" class="btn btn-primary" style="flex-grow: 1;">Product Inquiry <i class="fa-solid fa-paper-plane"></i></a>
+                            <a href="index.html#products" class="btn btn-outline" style="white-space: nowrap;"><i class="fa-solid fa-chevron-left"></i> Back to Catalog</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Error State Container -->
+            <div id="errorState" style="display: none; text-align: center; padding: 100px 24px; max-width: 600px; margin: 0 auto;">
+                <div style="font-size: 4rem; color: var(--secondary); margin-bottom: 24px;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <h2 style="font-size: 1.75rem; margin-bottom: 12px; color: var(--primary);">Product Not Found</h2>
+                <p style="color: var(--gray-500); margin-bottom: 30px; font-size: 1.05rem;">The requested product catalog item could not be retrieved. It may have been discontinued or renamed.</p>
+                <a href="index.html#products" class="btn btn-primary">Return to Catalog <i class="fa-solid fa-list-ul"></i></a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/910794590112" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <img src="assets/Logo.png" alt="Torso Lifesciences Logo" height="40" style="margin-bottom: 20px;">
+                <p>Leading innovation in renal wellness through advanced nephrology solutions and unwavering commitment to quality care.</p>
+                <div class="footer-certifications">
+                    <span>ISO Certified</span>
+                    <span>GMP Compliant</span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#products">Products</a>
+                    <a href="index.html#gallery">Events & Gallery</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Product Categories</h4>
+                <div class="footer-links">
+                    <a href="index.html#products">Transplant Care</a>
+                    <a href="index.html#products">Dialysis Support</a>
+                    <a href="index.html#products">Renal Nutrition</a>
+                    <a href="index.html#products">Renal Medicine</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Torso Lifesciences Pvt. Ltd. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Sticky Header Scroll Effect ---
+            const header = document.querySelector('header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // --- Products Database ---
+            const products = [
+                {
+                    id: 1,
+                    name: "Uxotor 40 Febuxostat",
+                    category: "Febuxostat 40mg Table",
+                    composition: "Febuxostat 40mg Tablets",
+                    description: "Uxotor 40 as Febuxostat 40mg Tablets, used to treat and prevent gout. Gout happens when the body produces too much uric acid — especially relevant for transplant patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Uxotor Tablets 10 x 10_Product 3D.jpg"
+                },
+                {
+                    id: 2,
+                    name: "Toromus",
+                    category: "Transplant Range",
+                    composition: "Tacrolimus Capsules 0.5mg & 1mg",
+                    description: "Tacrolimus is an immunosuppressive drug whose main use is after organ transplant to reduce the activity of the immune system and lower the risk of organ rejection.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Toromus 0.5 Capsules - Product 3D.jpg"
+                },
+                {
+                    id: 3,
+                    name: "Cymevir",
+                    category: "Cymevir",
+                    composition: "Valganciclovir Tablets IP 450mg",
+                    description: "Cymevir as Valganciclovir is an antiviral medication used to treat cytomegalovirus (CMV) infections in transplant patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Cymevir 450 mg Tablets_Product 3D.jpg"
+                },
+                {
+                    id: 4,
+                    name: "Mycotor S 360",
+                    category: "Transplant Range",
+                    composition: "Mycophenolic Acid Tablets USP 360mg",
+                    description: "Mycotor S 360 — Mycophenolic Acid Tablets USP 360mg — is an immunosuppressant used to prevent organ rejection after transplant.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Mycotor S Tablets 360 mg - Product 3D.jpg"
+                },
+                {
+                    id: 5,
+                    name: "Mycotor 500",
+                    category: "Transplant Range",
+                    composition: "Mycophenolate Mofetil Tablets 500mg",
+                    description: "Mycotor 500 as Mycophenolate Mofetil (MMF), a prodrug of mycophenolic acid — an immunosuppressant used after organ transplant.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/mycotor.jpg"
+                },
+                {
+                    id: 6,
+                    name: "Tornesp 40 PFS",
+                    category: "Dialysis",
+                    composition: "Darbepoetin Alfa Injection 40 mcg / 0.40 ml",
+                    description: "Tornesp 40 PFS is a recombinant form of human erythropoietin used to treat anemia by stimulating red blood cell production in dialysis patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Tornesp40PFS.jpg"
+                },
+                {
+                    id: 7,
+                    name: "OTF - SOFT",
+                    category: "Renal Nutrition",
+                    composition: "Omega-3 Marine Triglycerides – EPA 180mg, DHA 120mg",
+                    description: "OTF-SOFT Omega-3 Marine Triglycerides Capsules are polyunsaturated fatty acids (PUFAs) in softgel capsule form, supporting cardiovascular and renal health.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/OTF-SOFT Softgel Capsules 10 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 8,
+                    name: "Torpero HP",
+                    category: "Renal Nutrition",
+                    composition: "For HD: 1.2g protein/kg body weight · For PD: 1.5g protein/kg body weight",
+                    description: "Protein is an important nutrient that helps repair and build body tissues, drives metabolic processes, and is especially critical for dialysis patients with elevated protein needs.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Torpero HP 400gm_300 x 150mm - Product 3D.png"
+                },
+                {
+                    id: 9,
+                    name: "Renotreat Tablet",
+                    category: "Renal Nutrition",
+                    composition: "Ketoanalogues of Amino Acids (KAs)",
+                    description: "Renotreat Tablet — Ketoanalogues of amino acids (KAs) — are nitrogen-free analogs of essential amino acids used to support nutrition in CKD patients on low-protein diets.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Renotreat Tablets - Product 3D.jpg"
+                },
+                {
+                    id: 10,
+                    name: "Renotreat DS",
+                    category: "Renal Nutrition",
+                    composition: "Ketoanalogues of Amino Acids (KAs) — Double Strength",
+                    description: "Renotreat DS Tablet — Double Strength Ketoanalogues of amino acids (KAs) — nitrogen-free analogs of essential amino acids for enhanced renal nutritional support.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Renotreat DS Tablets - Product 3D.jpg"
+                },
+                {
+                    id: 11,
+                    name: "Renotreat Sachet",
+                    category: "Renal Nutrition",
+                    composition: "Ketoanalogues of Amino Acids (KAs)",
+                    description: "Renotreat Sachet — Ketoanalogues of amino acids (KAs) — nitrogen-free analogs of essential amino acids in convenient powder sachet form.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Renotreat Sachet - Product 3D.jpg"
+                },
+                {
+                    id: 12,
+                    name: "Tosovap",
+                    category: "Renal Medicine",
+                    composition: "Tolvaptan IP 15mg Tablets",
+                    description: "Tolvaptan is a selective vasopressin V2-receptor antagonist used to slow kidney function decline in patients with autosomal dominant polycystic kidney disease (ADPKD).",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Tosovap Tablets - Product 3D.jpg"
+                },
+                {
+                    id: 13,
+                    name: "Sobitor DS",
+                    category: "Renal Medicine",
+                    composition: "Enteric Coated Sodium Bicarbonate Tablets 1000mg",
+                    description: "Sobitor DS (Double Strength 1000mg) is an Enteric Coated Sodium Bicarbonate formulation used in the management of metabolic acidosis in chronic kidney disease patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Sobitor DS Tablets 10 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 14,
+                    name: "Sobitor",
+                    category: "Renal Medicine",
+                    composition: "Enteric Coated Sodium Bicarbonate Tablets 500mg & 1000mg",
+                    description: "Sobitor 500 and Sobitor DS (Double Strength 1000mg) are Enteric Coated Sodium Bicarbonate formulations for kidney disease management and metabolic acidosis.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Sobitor 500 mg Tablets 10 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 15,
+                    name: "Torbiotic Forte",
+                    category: "Renal Medicine",
+                    composition: "Each hard gelatin capsule contains pre-probiotic 90 BN CFU",
+                    description: "Torbiotic Forte Capsules are made up of Prebiotics and Probiotics. Prebiotics are indigestible dietary fibers that feed beneficial gut bacteria, supporting gut and renal health.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Torbiotic Capsules 3 x 1 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 16,
+                    name: "Torbiotic",
+                    category: "Renal Medicine",
+                    composition: "Prebiotics and Probiotics Capsules",
+                    description: "Torbiotic Capsules are made up of Prebiotics and Probiotics. Prebiotics are indigestible plant fibers that help nourish and grow healthy gut bacteria in renal patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Torbiotic Tablets 3 x 1 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 17,
+                    name: "Renoace",
+                    category: "Renal Medicine",
+                    composition: "Taurine 500mg + Acetylcysteine 150mg Tablets",
+                    description: "Renoace is a combination of Taurine 500mg and N-acetylcysteine 150mg. Renoace prevents or manages kidney-related oxidative stress and supports renal function.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Renoace Tablets 10 x 10 - Product 3D.jpg"
+                },
+                {
+                    id: 18,
+                    name: "Sevasor",
+                    category: "Renal Medicine",
+                    composition: "Sevelamer Carbonate Tablets 400mg & 800mg",
+                    description: "Sevasor — Sevelamer Carbonate — is a phosphate binder used to treat hyperphosphatemia in patients with chronic kidney disease who are on dialysis.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Sevasor 800 10 x 10 Tablets - Product 3D.jpg"
+                },
+                {
+                    id: 19,
+                    name: "Lacimto",
+                    category: "Renal Medicine",
+                    composition: "Calcium Acetate Tablets USP 667mg",
+                    description: "Lacimto is used to prevent high blood phosphate levels (hyperphosphatemia) in patients who are on dialysis due to end-stage renal disease.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/Lacimto.jpg"
+                },
+                {
+                    id: 20,
+                    name: "Torpanto DSR",
+                    category: "Acid Reflux",
+                    composition: "Pantoprazole 40mg + Domperidone 30mg",
+                    description: "Torpanto DSR is a combination of 2 medicines: Pantoprazole (a proton pump inhibitor) and Domperidone (a prokinetic), used to treat acid reflux and related gastric symptoms.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Torpanto-DSR CAP BOX - Product 3D.jpg"
+                },
+                {
+                    id: 21,
+                    name: "Eisen FE",
+                    category: "Iron Supplement",
+                    composition: "Ferric Saccharate (in microencapsulated form) 100mg",
+                    description: "Iron is an essential constituent of the body and is necessary for haemoglobin formation. Eisen FE provides microencapsulated ferric saccharate for better absorption and tolerability.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Iron-Supplement.png"
+                },
+                {
+                    id: 22,
+                    name: "Megastrol 40/160 mg",
+                    category: "Megastrol",
+                    composition: "Megastrol 40mg & 160mg",
+                    description: "Megastrol acetate is a progestin steroid hormone administered orally to treat specific infections and is used in the context of renal patient care.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Megastrol-16-40 mg.jpg"
+                },
+                {
+                    id: 23,
+                    name: "Torfoscin Sachet",
+                    category: "UTI Infection",
+                    composition: "Fosfomycin Trometamol Sachet 3gm",
+                    description: "TorfoSCIN powder as Fosfomycin Trometamol is a broad-spectrum antibiotic used to treat uncomplicated urinary tract infections (UTIs), common in renal and transplant patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Torfoscin Sachet 10 x 08 - Product 3D.jpg"
+                },
+                {
+                    id: 24,
+                    name: "Clonisor",
+                    category: "Hypertension",
+                    composition: "Clonidine Hydrochloride Tablets IP 100mcg / 150mcg",
+                    description: "Clonisor is used to treat high blood pressure (hypertension). Lowering high blood pressure helps prevent strokes, heart attacks, and kidney problems in CKD patients.",
+                    image: "https://torso.digiwebitsolutions.co.in/assets/web/product-image/torsoproduct/Clonisor 150 Tablets - Product 3D.jpg"
+                }
+            ];
+
+            // --- Mobile Navigation Menu Toggle ---
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            // --- Back to Top Button ---
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (backToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopBtn.classList.add('show');
+                    } else {
+                        backToTopBtn.classList.remove('show');
+                    }
+                });
+
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // --- Load Product Details ---
+            const params = new URLSearchParams(window.location.search);
+            const productId = parseInt(params.get('id'));
+
+            const detailCard = document.getElementById('productDetailCard');
+            const errorState = document.getElementById('errorState');
+
+            const product = products.find(p => p.id === productId);
+
+            if (product) {
+                // Populate contents
+                document.getElementById('breadcrumbActive').textContent = product.name;
+                document.getElementById('productDetailName').textContent = product.name;
+                document.getElementById('productDetailComposition').textContent = product.composition;
+                document.getElementById('productDetailDescription').textContent = product.description;
+                document.getElementById('productDetailCategory').textContent = product.category;
+                
+                // Set product image
+                const imgElement = document.getElementById('productDetailImage');
+                if (imgElement) {
+                    imgElement.src = product.image || 'assets/product-placeholder.svg';
+                    imgElement.alt = product.name;
+                }
+                
+                // Form type mapping
+                let dosageForm = "Oral Formulation";
+                if (product.composition.toLowerCase().includes('sachet')) {
+                    dosageForm = "Nutritional Sachet (Powder)";
+                } else if (product.composition.toLowerCase().includes('capsule')) {
+                    dosageForm = "Oral Capsules";
+                } else if (product.composition.toLowerCase().includes('injection') || product.composition.toLowerCase().includes('pfs')) {
+                    dosageForm = "PFS (Pre-filled Syringe) Injection";
+                } else if (product.composition.toLowerCase().includes('protein')) {
+                    dosageForm = "High Protein Supplement Powder";
+                }
+                document.getElementById('productDetailForm').textContent = dosageForm;
+
+                // Set dynamic Inquiry CTA
+                const inquiryBtn = document.getElementById('productDetailInquiryBtn');
+                inquiryBtn.href = `index.html#contact?inquiry=${encodeURIComponent(product.name)}`;
+
+                // Set document title
+                document.title = `${product.name} — Detail — Torso Lifesciences`;
+
+                // Display card
+                detailCard.style.display = 'block';
+                errorState.style.display = 'none';
+            } else {
+                // Show error layout
+                detailCard.style.display = 'none';
+                errorState.style.display = 'block';
+                document.title = "Product Not Found — Torso Lifesciences";
+            }
+        });
+    </script>
+</body>
+</html>

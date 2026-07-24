@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="stripGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Shadow -->
+  <rect x="25" y="35" width="110" height="90" rx="6" fill="#e2e8f0" opacity="0.5" />
+  
+  <!-- Box Body -->
+  <rect x="20" y="30" width="110" height="90" rx="6" fill="url(#boxGrad)" stroke="#cbd5e1" stroke-width="1.5" />
+  
+  <!-- Medicine strip accent -->
+  <path d="M 20 30 H 45 V 120 H 20 Z" fill="url(#stripGrad)" opacity="0.9" />
+  
+  <!-- Caduceus / Medical Cross Line Icon on Box -->
+  <g transform="translate(68, 55)" stroke="#64748b" stroke-width="2" fill="none">
+    <circle cx="12" cy="12" r="10" stroke="#cbd5e1" />
+    <path d="M12,5 L12,19" />
+    <path d="M5,12 L19,12" />
+  </g>
+  
+  <!-- Pill capsule in front -->
+  <g transform="translate(85, 95) rotate(-30)">
+    <rect x="0" y="0" width="34" height="14" rx="7" fill="#1e293b" />
+    <rect x="17" y="0" width="17" height="14" rx="7" fill="#0d9488" />
+    <line x1="17" y1="0" x2="17" y2="14" stroke="#ffffff" stroke-width="1" />
+  </g>
+  
+  <!-- Text lines on pack -->
+  <rect x="52" y="42" width="40" height="4" rx="2" fill="#94a3b8" />
+  <rect x="52" y="50" width="20" height="3" rx="1.5" fill="#cbd5e1" />
+</svg>

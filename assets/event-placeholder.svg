@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
+    <line x1="0" y1="100" x2="400" y2="100" />
+    <line x1="0" y1="200" x2="400" y2="200" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+  </g>
+  
+  <!-- Presentation Screen -->
+  <rect x="50" y="30" width="300" height="150" rx="4" fill="url(#screenGrad)" stroke="#10b981" stroke-width="2" />
+  <!-- Text on Screen -->
+  <text x="200" y="80" font-family="'Outfit', sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">CCNA NEPHROLOGY EVENT</text>
+  <text x="200" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#ecfdf5" text-anchor="middle">Leading Innovation in Kidney Care</text>
+  <text x="200" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#99f6e4" text-anchor="middle">Torso Lifesciences Pvt. Ltd.</text>
+  
+  <!-- Speaker Podium -->
+  <path d="M 70 230 L 80 180 L 100 180 L 110 230 Z" fill="#475569" />
+  <circle cx="90" cy="170" r="8" fill="#cbd5e1" />
+  
+  <!-- Stage floor -->
+  <rect y="230" width="400" height="70" fill="#334155" />
+  <rect y="230" width="400" height="5" fill="#0d9488" />
+  
+  <!-- Audience silhouette shapes -->
+  <g fill="#0f172a" opacity="0.95">
+    <!-- Audience Row -->
+    <circle cx="50" cy="275" r="18" />
+    <circle cx="100" cy="270" r="18" />
+    <circle cx="150" cy="278" r="18" />
+    <circle cx="200" cy="268" r="18" />
+    <circle cx="250" cy="272" r="18" />
+    <circle cx="300" cy="275" r="18" />
+    <circle cx="350" cy="270" r="18" />
+    
+    <circle cx="80" cy="295" r="22" />
+    <circle cx="130" cy="290" r="22" />
+    <circle cx="180" cy="298" r="22" />
+    <circle cx="230" cy="292" r="22" />
+    <circle cx="280" cy="295" r="22" />
+    <circle cx="330" cy="290" r="22" />
+  </g>
+  
+  <!-- Light beams -->
+  <polygon points="50,30 200,230 150,230" fill="rgba(16, 185, 129, 0.1)" />
+  <polygon points="350,30 200,230 250,230" fill="rgba(13, 148, 136, 0.1)" />
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 110" width="520" height="110">
+  <!-- Pill Left Half (White) with Custom Cutout Path -->
+  <path d="M 130,15 L 60,15 A 40,40 0 0,0 60,95 L 114,95 L 114,58 A 6,6 0 0,0 108,52 L 91,52 A 6,6 0 0,1 85,46 L 85,41 A 6,6 0 0,1 91,35 L 130,35 Z" fill="#ffffff" />
+  
+  <!-- Pill Right Half (White) with Custom Cutout Path -->
+  <path d="M 130,15 L 200,15 A 40,40 0 0,1 200,95 L 146,95 L 146,58 A 6,6 0 0,0 152,52 L 169,52 A 6,6 0 0,1 175,46 L 175,41 A 6,6 0 0,1 169,35 L 130,35 Z" fill="#ffffff" />
+  
+  <!-- Text: TORSO (White) -->
+  <text x="260" y="72" font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#ffffff" letter-spacing="0">TORSO</text>
+  
+  <!-- Text: LIFESCIENCES (White with slight opacity for premium look) -->
+  <text x="264" y="93" font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="19" font-weight="400" fill="#ffffff" opacity="0.85" letter-spacing="8">LIFESCIENCES</text>
+</svg>
