@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Febuxostat 40mg Table",
             composition: "Febuxostat 40mg Tablets",
             description: "Uxotor 40 as Febuxostat 40mg Tablets, used to treat and prevent gout. Gout happens when the body produces too much uric acid — especially relevant for transplant patients.",
-            image: "assets/uxotor.png"
+            image: "assets/uxotor-3d.jpg"
         },
         {
             id: 2,
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Transplant Range",
             composition: "Tacrolimus Capsules 0.5mg & 1mg",
             description: "Tacrolimus is an immunosuppressive drug whose main use is after organ transplant to reduce the activity of the immune system and lower the risk of organ rejection.",
-            image: "assets/toromus.png"
+            image: "assets/toromus-3d.jpg"
         },
         {
             id: 3,
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Cymevir",
             composition: "Valganciclovir Tablets IP 450mg",
             description: "Cymevir as Valganciclovir is an antiviral medication used to treat cytomegalovirus (CMV) infections in transplant patients.",
-            image: "assets/cy,evir.png"
+            image: "assets/cymevir-3d.jpg"
         },
         {
             id: 4,
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Transplant Range",
             composition: "Mycophenolic Acid Tablets USP 360mg",
             description: "Mycotor S 360 — Mycophenolic Acid Tablets USP 360mg — is an immunosuppressant used to prevent organ rejection after transplant.",
-            image: "assets/mycotor.png"
+            image: "assets/mycotor-s360.jpg"
         },
         {
             id: 5,
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Transplant Range",
             composition: "Mycophenolate Mofetil Tablets 500mg",
             description: "Mycotor 500 as Mycophenolate Mofetil (MMF), a prodrug of mycophenolic acid — an immunosuppressant used after organ transplant.",
-            image: "assets/mycotor.png"
+            image: "assets/mycotor-500.jpg"
         },
         {
             id: 6,
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Dialysis",
             composition: "Darbepoetin Alfa Injection 40 mcg / 0.40 ml",
             description: "Tornesp 40 PFS is a recombinant form of human erythropoietin used to treat anemia by stimulating red blood cell production in dialysis patients.",
-            image: "assets/tornesp-40.png"
+            image: "assets/tornesp-40-pfs.jpg"
         },
         {
             id: 7,
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Nutrition",
             composition: "Omega-3 Marine Triglycerides – EPA 180mg, DHA 120mg",
             description: "OTF-SOFT Omega-3 Marine Triglycerides Capsules are polyunsaturated fatty acids (PUFAs) in softgel capsule form, supporting cardiovascular and renal health.",
-            image: "assets/otf-soft.png"
+            image: "assets/otf-soft-3d.jpg"
         },
         {
             id: 8,
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs)",
             description: "Renotreat Tablet — Ketoanalogues of amino acids (KAs) — are nitrogen-free analogs of essential amino acids used to support nutrition in CKD patients on low-protein diets.",
-            image: "assets/renotreate.png"
+            image: "assets/renotreat-tablet.jpg"
         },
         {
             id: 10,
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs) — Double Strength",
             description: "Renotreat DS Tablet — Double Strength Ketoanalogues of amino acids (KAs) — nitrogen-free analogs of essential amino acids for enhanced renal nutritional support.",
-            image: "assets/renotreate.png"
+            image: "assets/renotreat-ds.jpg"
         },
         {
             id: 11,
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs)",
             description: "Renotreat Sachet — Ketoanalogues of amino acids (KAs) — nitrogen-free analogs of essential amino acids in convenient powder sachet form.",
-            image: "assets/renotreate.png"
+            image: "assets/renotreat-sachet.jpg"
         },
         {
             id: 12,
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Tolvaptan IP 15mg Tablets",
             description: "Tolvaptan is a selective vasopressin V2-receptor antagonist used to slow kidney function decline in patients with autosomal dominant polycystic kidney disease (ADPKD).",
-            image: "assets/tosovap.png"
+            image: "assets/tosovap-3d.jpg"
         },
         {
             id: 13,
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Enteric Coated Sodium Bicarbonate Tablets 1000mg",
             description: "Sobitor DS (Double Strength 1000mg) is an Enteric Coated Sodium Bicarbonate formulation used in the management of metabolic acidosis in chronic kidney disease patients.",
-            image: "assets/sobitor.png"
+            image: "assets/sobitor-ds.jpg"
         },
         {
             id: 14,
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Enteric Coated Sodium Bicarbonate Tablets 500mg & 1000mg",
             description: "Sobitor 500 and Sobitor DS (Double Strength 1000mg) are Enteric Coated Sodium Bicarbonate formulations for kidney disease management and metabolic acidosis.",
-            image: "assets/sobitor.png"
+            image: "assets/sobitor.jpg"
         },
         {
             id: 15,
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Each hard gelatin capsule contains pre-probiotic 90 BN CFU",
             description: "Torbiotic Forte Capsules are made up of Prebiotics and Probiotics. Prebiotics are indigestible dietary fibers that feed beneficial gut bacteria, supporting gut and renal health.",
-            image: "assets/torbiotic.png"
+            image: "assets/torbiotic-forte.jpg"
         },
         {
             id: 16,
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Prebiotics and Probiotics Capsules",
             description: "Torbiotic Capsules are made up of Prebiotics and Probiotics. Prebiotics are indigestible plant fibers that help nourish and grow healthy gut bacteria in renal patients.",
-            image: "assets/torbiotic.png"
+            image: "assets/torbiotic.jpg"
         },
         {
             id: 17,
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Taurine 500mg + Acetylcysteine 150mg Tablets",
             description: "Renoace is a combination of Taurine 500mg and N-acetylcysteine 150mg. Renoace prevents or manages kidney-related oxidative stress and supports renal function.",
-            image: "assets/renoace.png"
+            image: "assets/renoace-3d.jpg"
         },
         {
             id: 18,
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Sevelamer Carbonate Tablets 400mg & 800mg",
             description: "Sevasor — Sevelamer Carbonate — is a phosphate binder used to treat hyperphosphatemia in patients with chronic kidney disease who are on dialysis.",
-            image: "assets/sevasor.png"
+            image: "assets/sevasor-3d.jpg"
         },
         {
             id: 19,
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Renal Medicine",
             composition: "Calcium Acetate Tablets USP 667mg",
             description: "Lacimto is used to prevent high blood phosphate levels (hyperphosphatemia) in patients who are on dialysis due to end-stage renal disease.",
-            image: "assets/lacimto.png"
+            image: "assets/lacimto-3d.jpg"
         },
         {
             id: 20,
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Acid Reflux",
             composition: "Pantoprazole 40mg + Domperidone 30mg",
             description: "Torpanto DSR is a combination of 2 medicines: Pantoprazole (a proton pump inhibitor) and Domperidone (a prokinetic), used to treat acid reflux and related gastric symptoms.",
-            image: "assets/torpanto.png"
+            image: "assets/torpanto-dsr.jpg"
         },
         {
             id: 21,
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Iron Supplement",
             composition: "Ferric Saccharate (in microencapsulated form) 100mg",
             description: "Iron is an essential constituent of the body and is necessary for haemoglobin formation. Eisen FE provides microencapsulated ferric saccharate for better absorption and tolerability.",
-            image: "assets/eisen-fe.png"
+            image: "assets/eisen-fe-3d.png"
         },
         {
             id: 22,
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Megastrol",
             composition: "Megastrol 40mg & 160mg",
             description: "Megastrol acetate is a progestin steroid hormone administered orally to treat specific infections and is used in the context of renal patient care.",
-            image: "assets/megastrol.png"
+            image: "assets/megastrol-3d.jpg"
         },
         {
             id: 23,
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "UTI Infection",
             composition: "Fosfomycin Trometamol Sachet 3gm",
             description: "TorfoSCIN powder as Fosfomycin Trometamol is a broad-spectrum antibiotic used to treat uncomplicated urinary tract infections (UTIs), common in renal and transplant patients.",
-            image: "assets/torfo.png"
+            image: "assets/torfoscin-sachet.jpg"
         },
         {
             id: 24,
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "Hypertension",
             composition: "Clonidine Hydrochloride Tablets IP 100mcg / 150mcg",
             description: "Clonisor is used to treat high blood pressure (hypertension). Lowering high blood pressure helps prevent strokes, heart attacks, and kidney problems in CKD patients.",
-            image: "assets/clonisor.png"
+            image: "assets/clonisor-3d.jpg"
         }
     ];
 
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.innerHTML = `
                     <div class="product-image-container">
                         <span class="product-category-badge">${p.category}</span>
-                        <img src="${p.image || 'assets/product-placeholder.svg'}" alt="${p.name}" style="width:100px; height:auto;">
+                        <img src="${p.image || 'assets/product-placeholder.svg'}" alt="${p.name}" style="height:150px; width:auto; max-width:100%; object-fit:contain;">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">${p.name}</h3>
