@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = [
         {
             id: 1,
+            slug: "uxotor-40-febuxostat",
             name: "Uxotor 40 Febuxostat",
             category: "Febuxostat 40mg Table",
             composition: "Febuxostat 40mg Tablets",
@@ -86,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 2,
+            slug: "toromus",
             name: "Toromus",
             category: "Transplant Range",
             composition: "Tacrolimus Capsules 0.5mg & 1mg",
@@ -94,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 3,
+            slug: "cymevir",
             name: "Cymevir",
             category: "Cymevir",
             composition: "Valganciclovir Tablets IP 450mg",
@@ -102,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 4,
+            slug: "mycotor-s-360",
             name: "Mycotor S 360",
             category: "Transplant Range",
             composition: "Mycophenolic Acid Tablets USP 360mg",
@@ -110,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 5,
+            slug: "mycotor-500",
             name: "Mycotor 500",
             category: "Transplant Range",
             composition: "Mycophenolate Mofetil Tablets 500mg",
@@ -118,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 6,
+            slug: "tornesp-40-pfs",
             name: "Tornesp 40 PFS",
             category: "Dialysis",
             composition: "Darbepoetin Alfa Injection 40 mcg / 0.40 ml",
@@ -126,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 7,
+            slug: "otf-soft",
             name: "OTF - SOFT",
             category: "Renal Nutrition",
             composition: "Omega-3 Marine Triglycerides – EPA 180mg, DHA 120mg",
@@ -134,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 8,
+            slug: "torpero-hp",
             name: "Torpero HP",
             category: "Renal Nutrition",
             composition: "For HD: 1.2g protein/kg body weight · For PD: 1.5g protein/kg body weight",
@@ -142,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 9,
+            slug: "renotreat-tablet",
             name: "Renotreat Tablet",
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs)",
@@ -150,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 10,
+            slug: "renotreat-ds",
             name: "Renotreat DS",
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs) — Double Strength",
@@ -158,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 11,
+            slug: "renotreat-sachet",
             name: "Renotreat Sachet",
             category: "Renal Nutrition",
             composition: "Ketoanalogues of Amino Acids (KAs)",
@@ -166,6 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 12,
+            slug: "tosovap",
             name: "Tosovap",
             category: "Renal Medicine",
             composition: "Tolvaptan IP 15mg Tablets",
@@ -174,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 13,
+            slug: "sobitor-ds",
             name: "Sobitor DS",
             category: "Renal Medicine",
             composition: "Enteric Coated Sodium Bicarbonate Tablets 1000mg",
@@ -182,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 14,
+            slug: "sobitor",
             name: "Sobitor",
             category: "Renal Medicine",
             composition: "Enteric Coated Sodium Bicarbonate Tablets 500mg & 1000mg",
@@ -190,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 15,
+            slug: "torbiotic-forte",
             name: "Torbiotic Forte",
             category: "Renal Medicine",
             composition: "Each hard gelatin capsule contains pre-probiotic 90 BN CFU",
@@ -198,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 16,
+            slug: "torbiotic",
             name: "Torbiotic",
             category: "Renal Medicine",
             composition: "Prebiotics and Probiotics Capsules",
@@ -206,6 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 17,
+            slug: "renoace",
             name: "Renoace",
             category: "Renal Medicine",
             composition: "Taurine 500mg + Acetylcysteine 150mg Tablets",
@@ -214,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 18,
+            slug: "sevasor",
             name: "Sevasor",
             category: "Renal Medicine",
             composition: "Sevelamer Carbonate Tablets 400mg & 800mg",
@@ -222,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 19,
+            slug: "lacimto",
             name: "Lacimto",
             category: "Renal Medicine",
             composition: "Calcium Acetate Tablets USP 667mg",
@@ -230,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 20,
+            slug: "torpanto-dsr",
             name: "Torpanto DSR",
             category: "Acid Reflux",
             composition: "Pantoprazole 40mg + Domperidone 30mg",
@@ -238,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 21,
+            slug: "iron-supplement",
             name: "Eisen FE",
             category: "Iron Supplement",
             composition: "Ferric Saccharate (in microencapsulated form) 100mg",
@@ -246,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 22,
+            slug: "megastrol-40-160-mg",
             name: "Megastrol 40/160 mg",
             category: "Megastrol",
             composition: "Megastrol 40mg & 160mg",
@@ -254,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 23,
+            slug: "torfoscin-sachet",
             name: "Torfoscin Sachet",
             category: "UTI Infection",
             composition: "Fosfomycin Trometamol Sachet 3gm",
@@ -262,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 24,
+            slug: "clonisor",
             name: "Clonisor",
             category: "Hypertension",
             composition: "Clonidine Hydrochloride Tablets IP 100mcg / 150mcg",
@@ -314,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="product-composition">${p.composition}</p>
                         <p class="product-desc">${p.description}</p>
                         <div class="product-card-footer">
-                            <a href="product-detail.html?id=${p.id}" class="btn btn-outline btn-sm">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="product-detail/${p.slug}.html" class="btn btn-outline btn-sm">View Details <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 `;

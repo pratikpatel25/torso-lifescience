@@ -1802,7 +1802,6 @@ footer::before {
     box-shadow: var(--shadow-md);
     border: 1px solid var(--gray-100);
     overflow: hidden;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
