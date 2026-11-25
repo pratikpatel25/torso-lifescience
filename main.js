@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             slug: "uxotor-40-febuxostat",
             name: "Uxotor 40 Febuxostat",
-            category: "Febuxostat 40mg Table",
+            category: "Renal Medicine",
             composition: "Febuxostat 40mg Tablets",
             description: "Uxotor 40 as Febuxostat 40mg Tablets, used to treat and prevent gout. Gout happens when the body produces too much uric acid — especially relevant for transplant patients.",
             image: "assets/uxotor-3d.jpg"
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 3,
             slug: "cymevir",
             name: "Cymevir",
-            category: "Cymevir",
+            category: "Transplant Range",
             composition: "Valganciclovir Tablets IP 450mg",
             description: "Cymevir as Valganciclovir is an antiviral medication used to treat cytomegalovirus (CMV) infections in transplant patients.",
             image: "assets/cymevir-3d.jpg"
@@ -187,19 +187,19 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 13,
             slug: "sobitor-ds",
-            name: "Sobitor DS",
+            name: "Sobitor EC DS",
             category: "Renal Medicine",
             composition: "Enteric Coated Sodium Bicarbonate Tablets 1000mg",
-            description: "Sobitor DS (Double Strength 1000mg) is an Enteric Coated Sodium Bicarbonate formulation used in the management of metabolic acidosis in chronic kidney disease patients.",
+            description: "Sobitor EC DS (Double Strength 1000mg) is an Enteric Coated Sodium Bicarbonate formulation used in the management of metabolic acidosis in chronic kidney disease patients.",
             image: "assets/sobitor-ds.jpg"
         },
         {
             id: 14,
             slug: "sobitor",
-            name: "Sobitor",
+            name: "Sobitor EC 500",
             category: "Renal Medicine",
-            composition: "Enteric Coated Sodium Bicarbonate Tablets 500mg & 1000mg",
-            description: "Sobitor 500 and Sobitor DS (Double Strength 1000mg) are Enteric Coated Sodium Bicarbonate formulations for kidney disease management and metabolic acidosis.",
+            composition: "Enteric Coated Sodium Bicarbonate Tablets 500mg",
+            description: "Sobitor EC 500 is an Enteric Coated Sodium Bicarbonate formulation for kidney disease management and the treatment of metabolic acidosis.",
             image: "assets/sobitor.jpg"
         },
         {
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 20,
             slug: "torpanto-dsr",
             name: "Torpanto DSR",
-            category: "Acid Reflux",
+            category: "PPI",
             composition: "Pantoprazole 40mg + Domperidone 30mg",
             description: "Torpanto DSR is a combination of 2 medicines: Pantoprazole (a proton pump inhibitor) and Domperidone (a prokinetic), used to treat acid reflux and related gastric symptoms.",
             image: "assets/torpanto-dsr.jpg"
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 22,
             slug: "megastrol-40-160-mg",
             name: "Megastrol 40/160 mg",
-            category: "Megastrol",
+            category: "Appetite Stimulant",
             composition: "Megastrol 40mg & 160mg",
             description: "Megastrol acetate is a progestin steroid hormone administered orally to treat specific infections and is used in the context of renal patient care.",
             image: "assets/megastrol-3d.jpg"
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 23,
             slug: "torfoscin-sachet",
             name: "Torfoscin Sachet",
-            category: "UTI Infection",
+            category: "UTI",
             composition: "Fosfomycin Trometamol Sachet 3gm",
             description: "TorfoSCIN powder as Fosfomycin Trometamol is a broad-spectrum antibiotic used to treat uncomplicated urinary tract infections (UTIs), common in renal and transplant patients.",
             image: "assets/torfoscin-sachet.jpg"
@@ -287,10 +287,19 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 24,
             slug: "clonisor",
             name: "Clonisor",
-            category: "Hypertension",
+            category: "Antihypertensive",
             composition: "Clonidine Hydrochloride Tablets IP 100mcg / 150mcg",
             description: "Clonisor is used to treat high blood pressure (hypertension). Lowering high blood pressure helps prevent strokes, heart attacks, and kidney problems in CKD patients.",
             image: "assets/clonisor-3d.jpg"
+        },
+        {
+            id: 25,
+            slug: "puritch-lotion",
+            name: "Puritch Lotion",
+            category: "Anti Itch",
+            composition: "Anti Itch Lotion For Itchy Skin · 200 ml",
+            description: "Puritch Lotion is an advanced steroid-free anti-itch lotion specifically formulated to provide instant relief from uremic pruritus, dry skin, and intense itching in chronic kidney disease.",
+            image: "assets/puritch-box.png"
         }
     ];
 
@@ -469,15 +478,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- CCNA Events Owl Carousel & Year-Wise Filtering ---
+    // --- Events Gallery Owl Carousel & Month-Wise Filtering ---
     const eventsGallery = $('#eventsGallery');
-    const galleryYearFilter = $('#galleryYearFilter');
+    const galleryMonthFilter = $('#galleryMonthFilter');
     
     if (eventsGallery.length > 0) {
         // Clone and save the original gallery cards
         const originalCards = eventsGallery.find('.gallery-card').clone();
         
-        function filterGallery(year) {
+        function filterGallery(month) {
             // Destroy the carousel if it is already initialized
             if (eventsGallery.data('owl.carousel')) {
                 eventsGallery.owlCarousel('destroy');
@@ -486,10 +495,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Empty the container
             eventsGallery.empty();
             
-            // Filter cards matching the year
+            // Filter cards matching the month
             const filteredCards = originalCards.filter(function() {
-                const cardYear = $(this).attr('data-year');
-                return year === 'all' || cardYear === year;
+                const cardMonth = $(this).attr('data-month');
+                return month === 'all' || cardMonth === month;
             });
             
             // Append filtered cards back
@@ -499,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
             eventsGallery.owlCarousel({
                 loop: filteredCards.length > 3, // Enable looping only if there are enough items
                 margin: 30,
-                nav: true,
+                nav: filteredCards.length > 3,
                 dots: false,
                 navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
                 responsive: {
@@ -520,12 +529,12 @@ document.addEventListener('DOMContentLoaded', () => {
         filterGallery('all');
         
         // Filter tabs click handler
-        if (galleryYearFilter.length > 0) {
-            galleryYearFilter.find('.filter-btn').on('click', function() {
-                galleryYearFilter.find('.filter-btn').removeClass('active');
+        if (galleryMonthFilter.length > 0) {
+            galleryMonthFilter.find('.filter-btn').on('click', function() {
+                galleryMonthFilter.find('.filter-btn').removeClass('active');
                 $(this).addClass('active');
-                const selectedYear = $(this).attr('data-year');
-                filterGallery(selectedYear);
+                const selectedMonth = $(this).attr('data-month');
+                filterGallery(selectedMonth);
             });
         }
     }
